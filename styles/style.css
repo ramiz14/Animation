@@ -1,0 +1,477 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+.sun{
+    width: 80px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.mercury{
+    width: 30px;
+    position: absolute;
+    top: -10%;
+    left: 40%;
+    animation: orbit 0s linear infinite;
+}
+.mercury-brdr p{
+    color: white;
+    position: absolute;
+    top: -20%;
+    left: 30%;
+    animation: mercury-txt 0s linear infinite;
+}
+.mercury-brdr{
+    position: relative;
+    position: absolute;
+    border: 2px solid transparent;
+    border-radius: 100%;
+    width: 10%;
+    height: 20%;
+    left: 45%;
+    top: 41%; 
+    animation:mercury 0s linear infinite ;
+}
+.venus-brdr{
+    position: relative;
+    position: absolute;
+    border: 2px solid transparent;
+    border-radius: 100%;
+    width: 15%;
+    height: 30%;
+    left: 42.5%;
+    top: 36%;
+    animation:venus 0s linear infinite ;
+}
+.venus{
+    width: 30%;
+    position: absolute;
+    top: 4%;
+    left: 70%;
+    animation: orbit 0s linear infinite;
+}
+.venus-brdr p{
+    color: white;
+    position: absolute;
+    top: 4%;
+    left: 90%;
+    animation: venus-txt 0s linear infinite;
+    rotate: 65deg;
+}
+.earth-brdr{
+    position: relative;
+    position: absolute;
+    border: 2px solid transparent;
+    border-radius: 100%;
+    width: 20%;
+    height: 40%;
+    left: 40%;
+    top: 31%;
+    animation: earth 0s linear infinite ;
+}
+.earth{
+    width: 18%;
+    position: absolute;
+    top: 4%;
+    left: 6%;
+    animation: orbit 0s linear infinite;
+}
+.earth-brdr p{
+    color: white;
+    position: absolute;
+    top: 2%;
+    left: 4%;
+    animation: earth-txt 0s linear infinite;
+    rotate: -30deg;
+}
+.moon-brdr{
+    position: relative;
+    position: absolute;
+    border: 2px solid transparent;
+    border-radius: 100%;
+    width: 30%;
+    height: 30%;
+    left: 0%;
+    top: -2%;
+    animation: moon 0s linear infinite ;
+}
+.moon{
+    width: 15%;
+    position: absolute;
+    top: 4%;
+    left: 6%;
+    animation: orbit 0s linear infinite;
+}
+.moon-brdr p{
+    color: white;
+    position: absolute;
+    top: -20%;
+    left: -10%;
+    animation: moon-txt 0s linear infinite;
+    rotate: -20deg;
+}
+.mars-brdr{
+    position: relative;
+    position: absolute;
+    border: 2px solid transparent;
+    border-radius: 100%;
+    width: 25%;
+    height: 50%;
+    left: 37.5%;
+    top: 26%;
+    animation: mars 0s linear infinite ;
+}
+.mars{
+    width: 10%;
+    position: absolute;
+    top: -5%;
+    left: 50%;
+    animation: orbit 0s linear infinite;
+}
+.mars-brdr p{
+    color: white;
+    position: absolute;
+    top: -11%;
+    left: 52%;
+    animation: mars-txt 0s linear infinite;
+    rotate: 0deg;
+}
+.jupiter-brdr{
+    position: relative;
+    position: absolute;
+    border: 2px solid transparent;
+    border-radius: 100%;
+    width: 30%;
+    height: 60%;
+    left: 35%;
+    top: 22%;
+    animation: jupiter 0s linear infinite ;
+}
+.jupiter{
+    width: 30%;
+    position: absolute;
+    top: 30%;
+    left: -15%;
+    animation: orbit 0s linear infinite;
+}
+.jupiter-brdr p{
+    color: white;
+    position: absolute;
+    top: 39%;
+    left: -18%;
+    animation: jupiter-txt 0s linear infinite;
+    rotate: 0deg;
+}
+.saturn-brdr{
+    position: relative;
+    position: absolute;
+    border: 2px solid transparent;
+    border-radius: 100%;
+    width: 35%;
+    height: 70%;
+    left: 32.5%;
+    top: 18%;
+    animation: saturn 0s linear infinite ;
+}
+.saturn{
+    width: 30%;
+    position: absolute;
+    top: 93%;
+    left: 33%;
+    animation: orbit-strn 0s linear infinite;
+}
+.saturn-brdr p{
+    color: white;
+    position: absolute;
+    top: 108%;
+    left: 43%;
+    animation: saturn-txt 0s linear infinite;
+    rotate: 359deg;
+}
+.uranus-brdr{
+    position: relative;
+    position: absolute;
+    border: 2px solid white;
+    border-radius: 100%;
+    width: 40%;
+    height: 80%;
+    left: 30%;
+    top: 14%;
+    animation: uranus 0s linear infinite ;
+}
+.uranus{
+    width: 30%;
+    position: absolute;
+    top: 3%;
+    left: 65%;
+    animation: orbit 0s linear infinite;
+}
+.uranus-brdr p{
+    color: white;
+    position: absolute;
+    top: 1%;
+    left: 83%;
+    animation: uranus-txt 0s linear infinite;
+    rotate: 41deg;
+}
+@keyframes orbit-strn {
+    from{
+        transform: rotatey(0)
+    }
+    to{
+        transform: rotatey(360deg);
+    }
+}
+@keyframes orbit {
+    from{
+        rotate: 0deg;
+    }
+    to{
+        rotate: 360deg;
+    }
+}
+@keyframes mercury {
+    from{
+        rotate: 0deg;
+    }
+    to{
+        rotate: 360deg;
+    }
+
+}
+@keyframes venus {
+    from{
+        rotate: 0deg;
+    }
+    to{
+        rotate: 360deg;
+    }
+}
+@keyframes mercury-txt {
+    0%{
+        rotate: 0deg;
+    }
+    20%{
+        rotate: -72deg;
+    }
+    40%{
+        rotate: -144;
+    }
+    60%{
+        rotate: -216;
+    }
+    80%{
+        rotate: -288deg;
+    }
+    100%{
+        rotate: -360deg;
+    }
+
+}
+@keyframes venus-txt {
+    0%{
+        rotate: 0deg;
+    }
+    20%{
+        rotate: -72deg;
+    }
+    40%{
+        rotate: -144;
+    }
+    60%{
+        rotate: -216;
+    }
+    80%{
+        rotate: -288deg;
+    }
+    100%{
+        rotate: -360deg;
+    }
+
+}
+@keyframes earth {
+    from{
+        rotate: 0deg;
+    }
+    to{
+        rotate: 360deg;
+    }
+
+}
+@keyframes earth-txt {
+    0%{
+        rotate: 0deg;
+    }
+    20%{
+        rotate: -72deg;
+    }
+    40%{
+        rotate: -144;
+    }
+    60%{
+        rotate: -216;
+    }
+    80%{
+        rotate: -288deg;
+    }
+    100%{
+        rotate: -360deg;
+    }
+
+}
+@keyframes moon {
+    from{
+        rotate: 0deg;
+    }
+    to{
+        rotate: 360deg;
+    }
+
+}
+@keyframes moon-txt {
+    0%{
+        rotate: 0deg;
+    }
+    20%{
+        rotate: -72deg;
+    }
+    40%{
+        rotate: -144;
+    }
+    60%{
+        rotate: -216;
+    }
+    80%{
+        rotate: -288deg;
+    }
+    100%{
+        rotate: -360deg;
+    }
+
+}
+@keyframes mars {
+    from{
+        rotate: 0deg;
+    }
+    to{
+        rotate: 360deg;
+    }
+
+}
+@keyframes mars-txt {
+    0%{
+        rotate: 0deg;
+    }
+    20%{
+        rotate: -72deg;
+    }
+    40%{
+        rotate: -144;
+    }
+    60%{
+        rotate: -216;
+    }
+    80%{
+        rotate: -288deg;
+    }
+    100%{
+        rotate: -360deg;
+    }
+
+}
+@keyframes jupiter {
+    from{
+        rotate: 0deg;
+    }
+    to{
+        rotate: 360deg;
+    }
+
+}
+@keyframes jupiter-txt {
+    0%{
+        rotate: 0deg;
+    }
+    20%{
+        rotate: -72deg;
+    }
+    40%{
+        rotate: -144;
+    }
+    60%{
+        rotate: -216;
+    }
+    80%{
+        rotate: -288deg;
+    }
+    100%{
+        rotate: -360deg;
+    }
+
+}
+@keyframes saturn {
+    from{
+        rotate: 0deg;
+    }
+    to{
+        rotate: 360deg;
+    }
+
+}
+@keyframes saturn-txt {
+    0%{
+        rotate: 0deg;
+    }
+    20%{
+        rotate: -72deg;
+    }
+    40%{
+        rotate: -144;
+    }
+    60%{
+        rotate: -216;
+    }
+    80%{
+        rotate: -288deg;
+    }
+    100%{
+        rotate: -360deg;
+    }
+
+}
+@keyframes saturn {
+    from{
+        rotate: 0deg;
+    }
+    to{
+        rotate: 360deg;
+    }
+
+}
+@keyframes saturn-txt {
+    0%{
+        rotate: 0deg;
+    }
+    20%{
+        rotate: -72deg;
+    }
+    40%{
+        rotate: -144;
+    }
+    60%{
+        rotate: -216;
+    }
+    80%{
+        rotate: -288deg;
+    }
+    100%{
+        rotate: -360deg;
+    }
+
+}
